@@ -21,8 +21,11 @@ def set_difficulty():
   level = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
   if level == "easy":
     return EASY_LEVEL_TURNS
-  else:
+  elif level == "hard":
     return HARD_LEVEL_TURNS
+  else:
+    print("Please enter a valid input.")
+    set_difficulty()
 
 
 def game():
